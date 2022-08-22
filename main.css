@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.opacity{
+    opacity: 0.6;
+
+}
+
+nav{
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    padding: 8px 16px;
+    letter-spacing: 4px;  
+    z-index: 1; 
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_left{
+    padding: 8px 16px;
+}
+
+.nav_right li{
+    display: flex;
+    float: left;
+    padding: 8px 16px;
+}
+
+nav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.background{
+    position: relative;
+}
+
+.img{
+    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+    width: 98.5%;
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    letter-spacing: 4px;  
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+.br{
+    padding: 8px 16px;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.architects{
+    padding-top: 8px;
+    margin-left: 16px;
+}
+
+.slider{
+    padding: 32px 16px 4px 16px;
+    width: 98%;
+    overflow: hidden;
+    
+}
+
+.projects{
+    font-size: 24px;
+    color: #000;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(227, 224, 224) ;
+    margin-bottom: 32px;
+}
+
+.list{
+    margin-bottom: 32px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.items{
+    padding: 4px 8px;
+    width: 24.999999%;
+    position: relative;
+    float: left;
+    
+}
+
+.items > img{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+}
+
+.about{
+    font-size: 24px;
+    color: #000;
+    padding: 16px 0;
+    margin-top: 32px ;
+    border-bottom: 1px solid #e4e2e2;
+}
+
+.about-member{
+    overflow: hidden;
+}
+
+.about-content{
+    padding-bottom: 32px !important ;
+}
+
+.about-content{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.member{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+}
+
+.member > h3{
+    font-weight: 200;
+    font-size: 24px;
+}
+.member >p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.member >img{
+    width: 100%;
+    filter: grayscale(80%);
+}
+
+.member > button{
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    font-family: Verdana,sans-serif;
+
+}
+
+.member > button:hover{
+    background-color: #ccc;
+}
+
+.contact{
+    font-size: 24px;
+    color: #000;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(227, 224, 224) ;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+
+.input-content{
+    margin-bottom: 32px ;
+}
+
+.input-content > input{
+    padding: 8px;
+    width: 100%;
+    display: block;
+    margin: 16px 0;
+    font: inherit;
+}
+
+.input-content > button{
+    padding: 8px 16px;
+    margin: 16px 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+.input-content > button:hover{
+    color: #000;
+    background-color: #ccc
+}
+
+.img-map{
+    max-width: 100%;
+    height: auto;
+    /* width: 98%; */
+}
+
+.img-map > img{
+    width: 100%;
+}
+
+.footer{
+    background-color: #000;
+    padding: 16px 0;
+    text-align: center;
+    
+}
+
+.footer > p{
+    color: #fff;
+    margin: 15px 0;
+}
+
+.footer > p > a{
+    text-decoration: underline !important;
+    color: #fff;
+}
+
+
+
+/* responsive  */
+
+/* desktop */
+
+@media only screen and ( min-width : 1025px){
+    
+}
+
+
+/* tablet */
+
+@media only screen and ( min-width : 740px ) and ( max-width: 1024px){
+    .nav_right{
+        display: none;
+    }
+    .items{
+        width: 50%;
+    }
+    .member{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Mobile phone */
+
+@media only screen and ( max-width: 739px){
+    .nav_right{
+        display: none;
+    }
+    .items{
+        width: 100%;
+    }
+    .member{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .input-content > input{
+        margin: 16px auto;
+        width: 98%;
+    }
+}
+
